@@ -108,7 +108,7 @@ function Footer() {
 
           <p>
             <Mail size={17} />
-            info@buildwellengineers.in
+            ronithinfraprojects@ripl.com
           </p>
 
         </div>
