@@ -1,4 +1,5 @@
 import { ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
 
 function Hero() {
   return (
@@ -11,7 +12,7 @@ function Hero() {
         <div className="hero-content">
 
           <div className="hero-label">
-            Bangalore CIVIL ENGINEERING EXPERTS
+            BANGALORE CIVIL ENGINEERING EXPERTS
           </div>
 
           <h1>
@@ -30,14 +31,20 @@ function Hero() {
 
           <div className="hero-buttons">
 
-            <a href="#projects" className="btn-primary">
-              Explore Our Projects
+            <a
+              href="#projects"
+              className="btn-primary"
+            >
+              <span>Explore Our Projects</span>
               <ArrowRight size={18} />
             </a>
 
-            <a href="/contact" className="btn-outline">
+            <Link
+              to="/contact"
+              className="btn-outline"
+            >
               Contact Us
-            </a>
+            </Link>
 
           </div>
 

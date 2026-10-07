@@ -4,10 +4,13 @@ import {
   MapPin
 } from "lucide-react";
 
+import { Link } from "react-router-dom";
+
 function Footer() {
   return (
     <footer className="footer">
 
+      {/* CTA */}
       <div className="footer-cta">
 
         <div className="container">
@@ -28,9 +31,13 @@ function Footer() {
 
             </div>
 
-            <a href="/contact" className="footer-cta-button">
+            {/* CONTACT PAGE */}
+            <Link
+              to="/contact"
+              className="footer-cta-button"
+            >
               Contact Us
-            </a>
+            </Link>
 
           </div>
 
@@ -39,13 +46,19 @@ function Footer() {
       </div>
 
 
+      {/* FOOTER MAIN */}
       <div className="container footer-main">
 
+        {/* BRAND */}
         <div className="footer-column footer-brand">
 
-          <a href="/" className="footer-logo">
-            Ronith<span> Infra project private limited</span>
-          </a>
+          <Link
+            to="/"
+            className="footer-logo"
+          >
+            Ronith
+            <span> Infra project private limited</span>
+          </Link>
 
           <p>
             Delivering quality engineering and
@@ -56,42 +69,59 @@ function Footer() {
         </div>
 
 
+        {/* QUICK LINKS */}
         <div className="footer-column">
 
           <h4>Quick Links</h4>
 
-          <a href="/">Home</a>
-          <a href="#about">About</a>
-          <a href="#services">Services</a>
-          <a href="#process">How We Work</a>
-          <a href="/contact">Contact</a>
+          <Link to="/">
+            Home
+          </Link>
+
+          <Link to="/#about">
+            About
+          </Link>
+
+          <Link to="/#services">
+            Services
+          </Link>
+
+          <Link to="/#process">
+            How We Work
+          </Link>
+
+          <Link to="/contact">
+            Contact
+          </Link>
 
         </div>
 
 
+        {/* SERVICES */}
         <div className="footer-column">
 
           <h4>Services</h4>
 
-          <a href="#services">
+          <Link to="/#services">
             Civil Engineering
-          </a>
+          </Link>
 
-          <a href="#services">
+          <Link to="/#services">
             Industrial Construction
-          </a>
+          </Link>
 
-          <a href="#services">
+          <Link to="/#services">
             Project Management
-          </a>
+          </Link>
 
-          <a href="#services">
+          <Link to="/#services">
             Equipment Leasing
-          </a>
+          </Link>
 
         </div>
 
 
+        {/* CONTACT */}
         <div className="footer-column">
 
           <h4>Contact</h4>
@@ -116,12 +146,13 @@ function Footer() {
       </div>
 
 
+      {/* FOOTER BOTTOM */}
       <div className="footer-bottom">
 
         <div className="container">
 
           <p>
-            © 2026 Build Well Engineers.
+            © 2026 Ronith Infra Project Private Limited.
             All rights reserved.
           </p>
 
